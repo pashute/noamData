@@ -1,0 +1,27 @@
+{
+  "name": "noamdata-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "scripts": {
+    "build": "babel server --out-dir build --presets=es2015 && webpack",
+    "start": "nodemon src/app.js --exec \"npm run lint && node\"",
+    "lint": ".\\node_modules\\.bin\\eslint **/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
