@@ -14,7 +14,7 @@ app.get('/status', (req, res) => {
   })
 })
 
-app.get('/status', (req, res) => {
+app.get('/register', (req, res) => {
   res.send({
     message: `Registered ${req.body.email}`
   })
