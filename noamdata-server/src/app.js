@@ -10,7 +10,13 @@ app.use(cors())
 
 app.get('/status', (req, res) => {
   res.send({
-    message: 'vus machst a yid?'
+    message: 'TG'
+  })
+})
+
+app.get('/status', (req, res) => {
+  res.send({
+    message: `Registered ${req.body.email}`
   })
 })
 
