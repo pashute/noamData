@@ -4,7 +4,7 @@ import cors from 'cors'
 import morgan from 'morgan'
 
 const app = express()
-app.use(morgan('combine'))
+app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
